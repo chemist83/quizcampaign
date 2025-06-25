@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz Yarışması Başvuru</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="sticky-ad-top">
+
+        <p>Büyük İndirim Başladı! %30 İndirim Fırsatını Kaçırmayın! <a href="#" target="_blank">Şimdi Alışveriş Yap!</a></p>
+
+        <button id="close-sticky-ad-top">X</button>
+
+    </div>
+
+    <div class="container">
+
+        <h1>Quiz Yarışması Başvuru Formu</h1>
+
+        <form id="application-form">
+
+            <div class="form-group">
+
+                <label for="name">Adınız Soyadınız:</label>
+
+                <input type="text" id="name" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="email">E-posta Adresiniz:</label>
+
+                <input type="email" id="email" required>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="phone">Telefon Numaranız:</label>
+
+                <input type="tel" id="phone" pattern="[0-9]{10}" placeholder="Örn: 5xx1234567" required>
+
+            </div>
+
+            <button type="submit" id="open-info-modal-button">Başvur ve Bilgilendirmeyi Oku</button>
+
+        </form>
+
+        <div id="quiz-section" style="display:none;">
+
+            <h2>Quiz Soruları</h2>
+
+            <div id="quiz-timer">Kalan Süre: <span id="time-left">00</span> saniye</div>
+
+            <div id="quiz-container">
+
+                </div>
+
+            <button id="submit-quiz-button" style="display:none;">Quizi Bitir</button>
+
+            <div id="quiz-result" style="display:none;"></div>
+
+        </div>
+
+    </div>
+
+    <div id="sticky-ad-bottom">
+
+        <p>REKLAM ALANI: Yeni Yarışmamız Çok Yakında! <a href="#" target="_blank">Detaylar İçin Tıklayın!</a></p>
+
+        <button id="close-sticky-ad">X</button>
+
+    </div>
+
+    <div id="ad-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-button">&times;</span>
+
+            <h2>Özel Duyuru!</h2>
+
+            <p>Yeni quizler ve ödüllerle dolu bir dünyayı keşfedin!</p>
+
+            <a href="#" target="_blank" class="modal-button">Hemen Katıl!</a>
+
+            <img src="https://via.placeholder.com/300x150?text=REKLAM+RESM%C4%B0" alt="Reklam Görseli" style="max-width:100%; height:auto; margin-top:15px;">
+
+        </div>
+
+    </div>
+
+    <div id="info-modal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-button" id="close-info-modal">&times;</span>
+
+            <h2>Quiz Hakkında Bilgilendirme</h2>
+
+            <p>
+
+                This quiz has five questions. For every question, you have 10 seconds totally.You can't rejoin anymore as long as you finish the quiz. Please read the questions carefully and spend time well. World tricks may be found !!!
+
+            </p>
+
+            <div class="form-group" style="text-align: left;">
+
+                <label>
+
+                    <input type="checkbox" id="info-read-checkbox"> I read all information and I got it!
+                </label>
+
+            </div>
+
+            <button id="start-quiz-from-modal" disabled>Quize Başla</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+  </html>
