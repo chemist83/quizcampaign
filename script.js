@@ -446,3 +446,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+// Rastgele linkler için bir dizi oluştur
+const randomAdLinks = [
+    "https://www.google.com",
+    "https://www.youtube.com",
+    "https://www.wikipedia.org",
+    "https://www.amazon.com",
+    "https://www.github.com"
+    // Buraya istediğin kadar link ekleyebilirsin
+    // Her linki tırnak içine almayı ve aralarına virgül koymayı unutma
+];
+
+// Reklam linki elementini seç
+const randomAdLinkElement = document.getElementById('random-ad-link');
+
+// Eğer element varsa ve link listesi boş değilse
+if (randomAdLinkElement && randomAdLinks.length > 0) {
+    // Listeden rastgele bir link seç
+    const randomIndex = Math.floor(Math.random() * randomAdLinks.length);
+    const selectedLink = randomAdLinks[randomIndex];
+
+    // Seçilen linki href özelliğine ata
+    randomAdLinkElement.href = selectedLink;
+}
