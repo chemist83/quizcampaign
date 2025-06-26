@@ -116,6 +116,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             answer: "oxygen" // Seçeneklerden biriyle aynı olmalı
 
+        },
+
+        {
+            question: "Kireç taşı olarak bilinen bileşiğin kimyasal adı nedir?(What is the chemical name of compound that is known as limestone?)",
+            options: ["Seçenek A", "Seçenek B", "Seçenek C", "Seçenek D"],
+            answer: "Doğru Cevap Buraya Gelecek" // Seçeneklerden biriyle aynı olmalı
         }
     ];
 
